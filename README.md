@@ -8,9 +8,9 @@ Acessar a página de login https://the-internet.herokuapp.com/login em um dispos
 
 Preencher as credenciais:
 
-Username: tomsmith
+Username: LucasLegal
 
-Password: SuperSecretPassword!
+Password:SecretPassword!
 
 Clicar no botão Login.
 
