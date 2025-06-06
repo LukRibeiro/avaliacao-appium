@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wdio": "wdio run wdio.conf.js"
+    "wdio": "wdio run wdio.conf.js",
+    "test:api": "npx playwright test tests/api"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@playwright/test": "^1.52.0",
     "@wdio/allure-reporter": "^9.15.0",
     "@wdio/appium-service": "^9.15.0",
     "@wdio/browserstack-service": "^9.15.0",
