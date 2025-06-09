@@ -2,11 +2,11 @@ const { $ } = require('@wdio/globals')
 const Page = require('./page');
 
 /**
- * sub page containing specific selectors and methods for a specific page
+ * subpágina contendo seletores específicos e métodos para uma página específica
  */
 class SecurePage extends Page {
     /**
-     * define selectors using getter methods
+     * define seletores usando métodos getter
      */
     get flashAlert () {
         return $('#flash');
