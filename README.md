@@ -1,53 +1,63 @@
-📱 Avaliação Appium - Teste Automatizado com WebdriverIO e BrowserStack
-Este projeto foi desenvolvido como parte de uma avaliação prática de automação de testes utilizando WebdriverIO, Appium e BrowserStack.
 
-✅ Objetivo
-Automatizar o seguinte cenário:
 
-Acessar a página de login https://the-internet.herokuapp.com/login em um dispositivo Android real via BrowserStack.
+# Avaliação Prática – Teste Automatizado com WebdriverIO, Appium e BrowserStack
 
-Preencher as credenciais:
+Este repositório apresenta a solução desenvolvida como parte de uma avaliação prática de automação de testes mobile, utilizando as ferramentas WebdriverIO, Appium e execução em nuvem com BrowserStack.
 
-Username: LucasLegal
+---
 
-Password:SecretPassword!
+## Objetivo
 
-Clicar no botão Login.
+Automatizar o seguinte cenário em um dispositivo Android real acessado via BrowserStack:
 
-Verificar se o login foi realizado com sucesso.
+1. Acessar a página de login: `https://the-internet.herokuapp.com/login`
+2. Preencher as credenciais:
 
-🧪 Tecnologias utilizadas
-Node.js
+   * **Username:** `LucasLegal`
+   * **Password:** `SecretPassword!`
+3. Clicar no botão "Login"
+4. Verificar se o login foi realizado com sucesso
 
-WebdriverIO
+---
 
-Appium
+## Tecnologias Utilizadas
 
-Mocha
+* Node.js
+* WebdriverIO
+* Appium
+* Mocha
+* BrowserStack
+* Allure Reporter
 
-BrowserStack
+---
 
-Allure Reporter
+## Execução dos Testes
 
-⚙️ Execução
-Para executar o teste, basta rodar:
+Para instalar as dependências e executar os testes:
 
-bash
-Copy
+```bash
 npm install
 npx wdio run wdio.conf.js
-📂 Estrutura do projeto
-bash
-Copy
+```
+
+---
+
+## Estrutura do Projeto
+
+```
 avaliacao-appium/
-│
 ├── test/
 │   ├── specs/             # Casos de teste
-│   └── pageobjects/       # Page Objects usados nos testes
-│
-├── wdio.conf.js           # Configuração principal do WebdriverIO
+│   └── pageobjects/       # Page Objects utilizados nos testes
+├── wdio.conf.js           # Arquivo de configuração do WebdriverIO
 ├── package.json
 ├── .gitignore
-🌐 Teste em nuvem
+```
 
-Este projeto está configurado para rodar diretamente no BrowserStack, usando um dispositivo Android real com o navegador Chrome.
+---
+
+## Execução em Nuvem
+
+O projeto está configurado para execução em um ambiente de nuvem real, por meio do BrowserStack. Os testes são executados em um dispositivo Android real, utilizando o navegador Chrome.
+
+---
